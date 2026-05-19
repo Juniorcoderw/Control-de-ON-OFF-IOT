@@ -1,4 +1,5 @@
 const firebaseConfig = {
+codex/create-complete-files-as-per-read.md-6nidn5
   apiKey: "AIzaSyBBf7cPeI9Z6SPN6wFlopkXg4xpZk-vm1k",
   authDomain: "control-de-on-off-iot.firebaseapp.com",
   databaseURL: "https://control-de-on-off-iot-default-rtdb.firebaseio.com",
@@ -7,6 +8,14 @@ const firebaseConfig = {
   messagingSenderId: "211697475149",
   appId: "1:211697475149:web:709ce925f7094ef733c604",
   measurementId: "G-QXRQ23FSC0"
+  apiKey: "TU_API_KEY",
+  authDomain: "TU_PROYECTO.firebaseapp.com",
+  databaseURL: "https://TU_PROYECTO-default-rtdb.firebaseio.com",
+  projectId: "TU_PROYECTO",
+  storageBucket: "TU_PROYECTO.appspot.com",
+  messagingSenderId: "TU_ID",
+  appId: "TU_APP_ID"
+  main
 };
 
 if (!firebase.apps.length) {
