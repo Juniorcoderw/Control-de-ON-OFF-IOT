@@ -1,0 +1,157 @@
+:root {
+  --navy: #0f1f3d;
+  --azul: #1b3f77;
+  --celeste: #7fc7ff;
+  --blanco: #f7faff;
+  --amarillo: #ffd84a;
+  --gris: #bdd2ea;
+  --rojo: #ff7a7a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, var(--navy), var(--azul));
+  color: var(--blanco);
+  min-height: 100vh;
+}
+
+.pantalla {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1.2rem;
+}
+
+.tarjeta {
+  width: min(430px, 96%);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  padding: 1.5rem;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.subtitulo {
+  text-align: center;
+  margin-top: 0.4rem;
+  margin-bottom: 1.2rem;
+  color: var(--gris);
+}
+
+.formulario {
+  display: grid;
+  gap: 0.55rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+input {
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem;
+  margin-bottom: 0.45rem;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--celeste);
+  color: #072041;
+  margin-top: 0.4rem;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.03);
+}
+
+button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.secundario {
+  background: transparent;
+  color: var(--blanco);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.grupo-botones {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 0.8rem;
+}
+
+.mensaje {
+  margin-top: 0.9rem;
+  min-height: 1.2rem;
+  text-align: center;
+  font-size: 0.92rem;
+}
+
+.tarjeta-panel {
+  text-align: center;
+}
+
+.foco {
+  font-size: 5.2rem;
+  margin: 0.4rem 0;
+  transition: all 0.25s ease;
+}
+
+.foco.apagado {
+  filter: grayscale(0.85) brightness(0.65);
+}
+
+.foco.encendido {
+  filter: drop-shadow(0 0 16px var(--amarillo));
+}
+
+.estado {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.salir {
+  margin-top: 1rem;
+  background: #2a2a2a;
+  color: var(--blanco);
+}
+
+.error {
+  color: var(--rojo);
+}
+
+.ok {
+  color: #99f0a4;
+}
+
+@media (min-width: 768px) {
+  .tarjeta {
+    padding: 2rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
