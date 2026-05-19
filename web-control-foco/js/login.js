@@ -47,6 +47,7 @@ function traducirError(codigo) {
     "auth/invalid-credential": "Correo o contraseña incorrectos.",
     "auth/email-already-in-use": "Este correo ya está registrado.",
     "auth/weak-password": "La contraseña es muy débil.",
+ codex/create-complete-files-as-per-read.md-l5l1ex
     "auth/too-many-requests": "Demasiados intentos. Intenta más tarde.",
     "auth/operation-not-allowed": "Login con correo/clave no está habilitado en Firebase.",
     "auth/network-request-failed": "Sin conexión de red.",
@@ -56,6 +57,11 @@ function traducirError(codigo) {
 
   if (mapa[codigo]) return mapa[codigo];
   return `Error de acceso (${codigo || "sin-código"}). Revisa Firebase Auth y dominio autorizado.`;
+    "auth/too-many-requests": "Demasiados intentos. Intenta más tarde."
+  };
+
+  return mapa[codigo] || "Ocurrió un error. Revisa tus datos e intenta de nuevo.";
+ main
 }
 
 form_login.addEventListener("submit", async (e) => {
