@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Control de Foco IoT</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+  <script defer src="js/firebase-config.js"></script>
+  <script defer src="js/login.js"></script>
+</head>
+<body>
+  <main class="pantalla">
+    <section class="tarjeta">
+      <h1>Control de Foco IoT</h1>
+      <p class="subtitulo">Inicia sesión para controlar tu foco</p>
+
+      <form id="form_login" class="formulario" novalidate>
+        <label for="correo">Correo</label>
+        <input id="correo" type="email" placeholder="ejemplo@correo.com" autocomplete="email" required />
+
+        <label for="clave">Contraseña</label>
+        <input id="clave" type="password" placeholder="********" autocomplete="current-password" minlength="6" required />
+
+        <button id="boton_login" type="submit">Iniciar sesión</button>
+      </form>
+
+      <button id="boton_registro" class="secundario" type="button">Crear cuenta</button>
+      <p id="mensaje" class="mensaje" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+</body>
+</html>
