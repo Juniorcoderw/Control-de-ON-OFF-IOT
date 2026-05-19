@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel | Control de Foco IoT</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+  <script defer src="js/firebase-config.js"></script>
+  <script defer src="js/panel.js"></script>
+</head>
+<body>
+  <main class="pantalla">
+    <section class="tarjeta tarjeta-panel">
+      <h1>Panel de Control</h1>
+      <p class="subtitulo">Estado en tiempo real del foco</p>
+
+      <div id="foco" class="foco apagado" aria-label="Estado del foco">💡</div>
+      <p id="texto_estado" class="estado">CARGANDO...</p>
+
+      <div class="grupo-botones">
+        <button id="boton_on" type="button">ENCENDER</button>
+        <button id="boton_off" class="secundario" type="button">APAGAR</button>
+      </div>
+
+      <button id="boton_salir" class="salir" type="button">Cerrar sesión</button>
+      <p id="mensaje" class="mensaje" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+</body>
+</html>
